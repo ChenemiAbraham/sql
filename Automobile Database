@@ -1,0 +1,19 @@
+CREATE DATABASE Automobile;
+USE Automobile;
+CREATE TABLE vehicle( 
+vehicleID varchar(10), 
+ownerID varchar(10), 
+plateNumber varchar(10), 
+phoneNumber INT);
+SHOW tables;
+show columns from vehicle;
+CREATE TABLE Owner(
+ownerID VARCHAR(10), 
+ownerName VARCHAR(50), 
+ownerdrerss  VARCHAR(255), 
+PRIMARY KEY (ownerID));
+Show columns from vehicle;
+Show columns from Owner;
+ALTER TABLE vehicle ADD FOREIGN KEY (ownerID) REFERENCES owner (ownerID);
+Show columns from vehicle;
+describe vehicle;
